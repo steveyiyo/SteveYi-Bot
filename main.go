@@ -14,7 +14,7 @@ import (
 func main() {
 	godotenv.Load()
 
-	TGBotToken := os.Getenv("Telegram_Bot_Token")
+	TGBotToken := os.Getenv("TelegramBotToken")
 
 	bot, err := tgbotapi.NewBotAPI(TGBotToken)
 	if err != nil {
